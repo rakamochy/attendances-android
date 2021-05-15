@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Absen Berbasis Android</string>
+    <string name="hello_sign_in_your_account">Hello sign in your account</string>
+    <string name="email">Email</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
 </resources>
