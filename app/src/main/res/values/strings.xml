@@ -6,7 +6,6 @@
     <string name="password">Password</string>
     <string name="forgot_password">Lupa Password</string>
     <string name="history">History</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="current_location">Current Location</string>
     <string name="default_text">-</string>
     <string name="your_photo">Your Photo</string>
@@ -16,4 +15,14 @@
     <string name="change_password">Change Password</string>
     <string name="change_language">Change Language</string>
     <string name="logout">Logout</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="attendance">Attendance</string>
+    <string name="please_field_your_email">Please field your email</string>
+    <string name="please_use_valid_email">Please use valid email</string>
+    <string name="please_field_your_password">Please field your password</string>
+    <string name="failed">Failed</string>
+    <string name="success">Success</string>
+    <string name="lokasi">Lokasi</string>
 </resources>
