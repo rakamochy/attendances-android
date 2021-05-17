@@ -17,7 +17,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
         init()
     }
 
-    private fun (){
+    private fun init() {
         setSupportActionBar(binding.tbForgotPassword)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
