@@ -24,25 +24,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        binding.btmNavigationMain.setOnNavigationItemReselectedListener {
-            when(it.itemId){
+        binding.btmNavigationMain.setOnNavigationItemSelectedListener {
+            when(it.itemId) {
                 R.id.action_history -> {
-                    openFragment (HistoryFragment())
-                    return@setOnNavigationItemReselectedListener true
+                    openFragment(HistoryFragment())
+                    return@setOnNavigationItemSelectedListener true
                 }
 
                 R.id.action_attendance -> {
                     openFragment(AttendanceFragment())
-                    return@setOnNavigationItemReselectedListener true
+                    return@setOnNavigationItemSelectedListener true
                 }
 
                 R.id.action_profile -> {
                     openFragment(ProfileFragment())
-                    return@setOnNavigationItemReselectedListener true
+                    return@setOnNavigationItemSelectedListener true
                 }
             }
-
-            return@setOnNavigationItemReselectedListener false
+            return@setOnNavigationItemSelectedListener false
         }
         openHomeFragment()
     }
@@ -51,12 +50,11 @@ class MainActivity : AppCompatActivity() {
         binding.btmNavigationMain.selectedItemId = R.id.action_attendance
     }
 
-    private fun openFragment(Fragment: Fragment) {
+    private fun openFragment(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.frame_main, fragment)
             .addToBackStack(null)
             .commit()
     }
-
 }
